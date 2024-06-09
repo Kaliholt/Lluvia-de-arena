@@ -1,0 +1,9 @@
+.header__logo {
+    padding: 0 16px;
+}
+.header__menu-icon {
+    display: none;
+}
+.header__navbar-list {
+    display: flex;
+}
