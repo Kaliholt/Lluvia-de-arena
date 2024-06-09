@@ -1,0 +1,126 @@
+/* * General Styles */
+
+
+:root {
+    --nav: #F0E0BB;
+    --tan: #E7D3B2;
+    --mustard-yellow: #FFE681;
+    --footer: #994D21;
+    --gray-bold: #414141;
+    --gray-medium: #8C8C8C;
+    --gray-light: #CCCCCC;
+    --gray-extralight: #ECECEC;
+}
+
+html {
+    box-sizing: border-box;
+    font-family:'Inter';
+    font-size: 62.5%;   
+}
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+
+
+/* * Utilities */
+
+.title {
+    font-size: 3rem;
+}
+.subtitle {
+    font-size: 2.4rem;
+}
+.sub-subtitle {
+    font-size: 1.8rem;
+}
+.text {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.text--weight-bold {
+    font-weight: 700;
+}
+.text--size-small {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.container {
+    display: flex;
+    padding: 16px;
+    flex-wrap: wrap;
+}
+.container--direction-column {
+    flex-direction: column;
+}
+.container--padding-left-smaller {
+    padding-left: 0;
+}
+
+
+
+/* * Site Wide */
+/* 
+* 1. Positioning: Static, Absolute, Relative, Fixed
+* 2. Box Model: Margin, Padding, Border, Content, Display
+* 3. Typography: Font-weight, Font-size, Font-display
+* 4. Visuals: Box-shadow, Border-radius, Gradient
+* 5. Otros
+*/
+
+.footer {
+    background-color: var(--footer);
+    color: var(--gray-extralight);
+}
+.footer__container-info {
+    margin: 0 auto;
+    padding: 16px 0;
+    max-width: 1500px;
+    justify-content: space-evenly;
+}
+.footer__social-media-icons {
+    padding: 16px 0 0;
+    min-width: 240px;
+    gap: 24px;
+}
+.footer__contact-us-item {
+    padding: 16px 0 0;
+    min-width: 240px;
+    align-items: center;
+    gap: 8px;
+}
+.footer__privacy-container {
+    min-width: 240px;
+    gap: 16px;
+}
+.footer__privacy-link-list {
+    gap: 16px;
+    padding: 0;
+}
+.footer__help-container {
+    min-width: 240px;
+    gap: 16px;
+}
+.footer__copyright {
+    margin: 0 auto;
+    padding: 16px;
+    width: fit-content;
+    color: var(--gray-light);
+}
