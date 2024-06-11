@@ -1,6 +1,15 @@
+/* *Site Wide  */
+
 .footer__social-media-icons,
 .footer__contact-us-item,
 .footer__privacy-container,
 .footer__help-container {
     min-width: 0;
+}
+
+
+
+/* *Home Page  */
+.slider {
+    aspect-ratio: 8 / 4;
 }
