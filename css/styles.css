@@ -84,10 +84,16 @@ h4 {
 }
 .shadow {
     position: absolute;
-    top: 100px;
-    width: 100vw;
-    height: calc(100vh - 100px);
+    top: 0px;
+    width: 100%;
     background-color: rgba(0,0,0,0.3);
+}
+.shadow--full {
+    top: 100px;
+    height: calc(100vh - 100px);
+}
+.shadow--partial {
+    height: 100%;
 }
 
 
@@ -231,12 +237,3 @@ h4 {
     85% { margin-left: -500%; }
     100% { margin-left: -500%; }
 }
-
-.shadow__slider-shadow {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.3);
-}
-

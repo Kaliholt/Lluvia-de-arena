@@ -1,6 +1,6 @@
 const menuIcon = document.querySelector('.header__menu-icon');
 const menu = document.querySelector('.header__menu');
-const shadow = document.querySelector('.shadow');
+const shadowFull = document.querySelector('.shadow--full');
 
 menuIcon.addEventListener('click', toggleMenu);
 
@@ -8,9 +8,9 @@ menuIcon.addEventListener('click', toggleMenu);
 function toggleMenu() {
     if(!menu.classList.contains('hidden')) {
         menu.classList.add('hidden');
-        shadow.classList.add('hidden');
+        shadowFull.classList.add('hidden');
     } else {
         menu.classList.remove('hidden');
-        shadow.classList.remove('hidden');
+        shadowFull.classList.remove('hidden');
     }
 }
