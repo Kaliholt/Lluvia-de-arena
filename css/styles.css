@@ -2,6 +2,11 @@
 
 
 :root {
+    --title: 3rem;
+    --subtitle: 2.4rem;
+    --sub-subtitle: 1.8rem;
+    --text: 1.6rem;
+    --text-small: 1.4rem;
     --navbar: #F0E0BB;
     --tan: #E7D3B2;
     --mustard-yellow: #FFE681;
@@ -10,6 +15,7 @@
     --gray-medium: #8C8C8C;
     --gray-light: #CCCCCC;
     --gray-extralight: #ECECEC;
+    --background-gradient: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
 }
 
 html {
@@ -43,16 +49,16 @@ h4 {
 /* * Utilities */
 
 .title {
-    font-size: 3rem;
+    font-size: var(--title);
 }
 .subtitle {
-    font-size: 2.4rem;
+    font-size: var(--subtitle);
 }
 .sub-subtitle {
-    font-size: 1.8rem;
+    font-size: var(--sub-subtitle);
 }
 .text {
-    font-size: 1.6rem;
+    font-size: var(--text);
     font-weight: 500;
 }
 .text--weight-bold {
@@ -62,7 +68,7 @@ h4 {
     font-weight: 400;
 }
 .text--size-small {
-    font-size: 1.4rem;
+    font-size: var(--text-small);
     font-weight: 400;
 }
 
@@ -97,11 +103,11 @@ h4 {
     width: 100%;
     background-color: rgba(0,0,0,0.3);
 }
-.shadow--full {
+.shadow--size-full {
     top: 100px;
     height: calc(100vh - 100px);
 }
-.shadow--partial {
+.shadow--size-partial {
     height: 100%;
 }
 
@@ -255,9 +261,9 @@ h4 {
     100% { margin-left: -500%; }
 }
 
-/* Section: Why us? */
+/* Section: Why us?*/
 .why-us-section {
-    margin: 64px 0 32px 0;
+    margin: 64px 0;
     text-align: center;
 }
 .why-us-section__cards-container {
@@ -268,4 +274,45 @@ h4 {
 .why-us-section__card {
     max-width: 300px;
     height: 200px;
+}
+
+/*Section: Destinations*/
+.section-our-destinations {
+    padding: 64px 0;
+    text-align: center;
+    background-color: var(--tan);
+}
+.section-our-destinations__items-container {
+    margin-top: 32px;
+    gap: 32px;
+    justify-content: center;
+}
+.section-our-destinations__item {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    align-content: center;
+    aspect-ratio: 4 / 3;
+    color: white;
+    background-image: var(--background-gradient), url(../assets/images/ballestas-islands/candelabro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section-our-destinations__item:nth-child(2) {
+    background-image: var(--background-gradient), url(../assets/images/huacachina/panoramic.png);
+}
+.section-our-destinations__item:nth-child(3) {
+    background-image: var(--background-gradient), url(../assets/images/nazca-lines/monkey.png);
+}
+.section-our-destinations__button {
+    position: static;
+    display: flex;
+    min-height: 60px;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.section-our-destinations__item-title  {
+    font-size: var(--subtitle);
 }

@@ -1,16 +1,11 @@
 /* *General Styles*/
 
-.subtitle {
-    font-size: 2.8rem;
-}
-.sub-subtitle {
-    font-size: 2.2rem;
-}
-.text {
-    font-size: 1.8rem;
-}
-.text--size-small {
-    font-size: 1.6rem;
+:root {
+    --title: 3.4rem;
+    --subtitle: 2.8rem;
+    --sub-subtitle: 2.2rem;
+    --text: 1.8rem;
+    --text-small: 1.6rem;
 }
 
 
@@ -27,6 +22,8 @@
 
 
 /* *Home Page  */
+
+/*Carousel of Images*/
 .slider {
     aspect-ratio: 8 / 4;
 }
@@ -34,4 +31,9 @@
 /*Section:Why us?*/
 .why-us-section__card {
     height: 250px;
+}
+
+/*Section:Our Destinations*/
+.section-our-destinations__item {
+    max-width: 450px;
 }
