@@ -52,7 +52,7 @@ h4 {
     font-size: 1.8rem;
 }
 .text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 .text--weight-bold {
@@ -62,9 +62,10 @@ h4 {
     font-weight: 400;
 }
 .text--size-small {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
 }
+
 .container {
     display: flex;
     padding: 16px;
@@ -79,9 +80,17 @@ h4 {
 .container--display-none {
     display: none;
 }
+.container--type-card {
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+}
+
 .hidden {
     display: none;
 }
+
 .shadow {
     position: absolute;
     top: 0px;
@@ -94,6 +103,14 @@ h4 {
 }
 .shadow--partial {
     height: 100%;
+}
+
+.icon {
+    width: 24px;
+    color: var(--mustard-yellow);
+}
+.icon--size-big {
+    width: 35px;
 }
 
 
@@ -236,4 +253,19 @@ h4 {
     
     85% { margin-left: -500%; }
     100% { margin-left: -500%; }
+}
+
+/* Section: Why us? */
+.why-us-section {
+    margin: 64px 0 32px 0;
+    text-align: center;
+}
+.why-us-section__cards-container {
+    margin-top: 32px;
+    justify-content: center;
+    gap: 32px;
+}
+.why-us-section__card {
+    max-width: 300px;
+    height: 200px;
 }
