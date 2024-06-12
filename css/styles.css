@@ -1,6 +1,5 @@
 /* * General Styles */
 
-
 :root {
     --title: 3rem;
     --subtitle: 2.4rem;
@@ -15,6 +14,8 @@
     --gray-medium: #8C8C8C;
     --gray-light: #CCCCCC;
     --gray-extralight: #ECECEC;
+    --primary-button: #0078c3;
+    --primary-button-hover: #0069AB;
     --background-gradient: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
 }
 
@@ -44,6 +45,10 @@ h4 {
     margin: 0;
 }
 
+input,
+textarea {
+    outline: none;
+}
 
 
 /* * Utilities */
@@ -122,6 +127,14 @@ h4 {
     width: 35px;
 }
 
+.button {
+    border: 0;
+    border-radius: 5px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+}
+
 .hero {
     width: 100%;
     max-height: 600px;
@@ -129,6 +142,42 @@ h4 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;   
+}
+
+/*Form*/
+.form {
+    padding: 0;
+    width: 100%;
+    max-width: 700px;
+    gap: 16px;
+}
+.form__item {
+    padding: 0;
+    gap: 8px;
+}
+.form__text {
+    display: block;
+}
+.form__input {
+    padding: 8px;
+    height: 50px;
+    width: 100%;
+    border: var(--gray-light) solid 1px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form__input:focus {
+    border: 1px solid rgb(0,0,0);
+}
+.form__input--text-area {
+    height: 150px;
+    resize: vertical;
+}
+.form__button {
+    background-color: var(--primary-button);
+} 
+.form__button:hover {
+    background-color: var(--primary-button-hover);
 }
 
 
@@ -368,3 +417,29 @@ h4 {
 /*Section: Our Values*/
 
 /*Section: Why us?*/
+
+
+/* *Contact Page */
+
+.contact {
+    padding: 0 0 64px 0;
+    justify-content: center;
+    gap: 64px;
+}
+
+/*Section: Hero*/
+.contact__hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: var(--background-gradient), url(../assets/images/hero-contact.png);
+}
+
+/*Section: Form*/
+.contact__form-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}

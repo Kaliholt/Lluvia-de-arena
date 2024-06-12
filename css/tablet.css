@@ -1,3 +1,11 @@
+/* *General Styles */
+.form {
+    gap: 24px;
+}
+
+
+/* *Site Wide*/
+
 .header__logo {
     padding: 0 16px;
 }

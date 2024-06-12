@@ -32,7 +32,36 @@
              </ul>
         </section>
     </header>
-
+    <main class="container contact">
+        <section class="hero contact__hero">
+            <h2 class="subtitle">Vive una Experiencia Maravillosa</h2>
+        </section>
+        <section class="container contact__form-container">
+            <form class="container form container--direction-column" method="post" action="">
+                <label class="container container--direction-column form__item" for="name">
+                    <span class="text text--weight-regular form__text">Nombres: </span>
+                    <input class="text form__input" type="text" name="name" id="name" autocomplete="name" required>
+                </label>
+                <label class="container container--direction-column form__item" for="lastname">
+                    <span class="text text--weight-regular form__text">Apellidos: </span>
+                    <input class="text form__input" type="text" name="lastname" id="lastname" autocomplete="family-name" required>
+                </label>
+                <label class="container container--direction-column form__item" for="phone">
+                    <span class="text text--weight-regular form__text">Celular: </span>
+                    <input class="text form__input" type="text" name="phone" id="phone" autocomplete="tel" required>
+                </label>
+                <label class="container container--direction-column form__item" for="email">
+                    <span class="text text--weight-regular form__text">Email: </span>
+                    <input class="text form__input" type="email" name="email" id="email" autocomplete="email" required>
+                </label>
+                <label class="container container--direction-column form__item" for="message">
+                    <span class="text text--weight-regular form__text">Mensaje: </span>
+                    <textarea class="text form__input form__input--text-area" name="message" id="message"></textarea>
+                </label>
+                <input class="text text--weight-bold button form__button" type="button" value="Enviar">
+            </form>
+        </section>
+    </main>
     <footer class="footer">
         <section class="container footer__container-info">
             <div class="container container--direction-column">
