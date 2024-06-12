@@ -37,3 +37,26 @@
 .section-our-destinations__item {
     max-width: 450px;
 }
+
+
+/* *About Page */
+.who-are-we-section {
+    gap: 0;
+}
+.who-are-we-section__hero {
+    align-self: stretch;
+    max-width: 50%;
+    max-height: none;
+    order: 2;
+}
+.who-are-we-section__container {
+    padding: 64px 0;
+    max-width: 50%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.who-are-we-section__info {
+    gap: 32px;
+    max-width: 750px;
+}
